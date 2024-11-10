@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusHut Feedback Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="max-w-2xl mx-auto p-6">
+    <h1 class="text-4xl font-bold text-center mb-4">CampusHut</h1>
+    <h2 class="text-2xl font-bold text-center mb-4">Feedback Form</h1>
+    <p class="text-center mb-6">We value your feedback! Please let us know how we can improve your experience on CampusHut.</p>
+    
+    <form action="#" method="POST" class="space-y-4 bg-gray-300 p-6 shadow-lg rounded-lg">
+      
+      <!-- Name -->
+      <div>
+        <label class="block font-semibold mb-1" for="name">Your Name (optional)</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500 ">
+      </div>
+
+      <!-- Email -->
+      <div>
+        <label class="block font-semibold mb-1" for="email">Your Email Address (optional)</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+      </div>
+
+      <!-- University Affiliation -->
+      <div>
+        <label class="block font-semibold mb-1" for="university">University Affiliation</label>
+        <select id="university" name="university" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500">
+          <option disabled selected>Select your university</option>
+          <option value="university1">Daffodil International University</option>
+          <option value="university2">American International University-Bangladesh</option>
+          <option value="university3">International University of Business Agriculture & Technology</option>
+          <option value="university3">International Islamic University Chittagong</option>
+          <option value="university3">Ahsanullah University of Science and Technology</option>
+          <option value="university3">East West University</option>
+          <option value="university3">University of Asia Pacific</option>
+          <option value="university3">Dhaka International University</option>
+          <option value="university3">Manarat International University</option>
+          <option value="university3">BRAC University</option>
+          <option value="university3">Bangladesh University</option>
+          <option value="university3">Sylhet International University</option>
+          <option value="university3">Dhaka International University</option>
+        </select>
+      </div>
+
+      <!-- Overall Satisfaction -->
+      <div>
+        <label class="block font-semibold mb-1">How satisfied are you with CampusHut?</label>
+        <div class="flex space-x-4">
+          <label><input type="radio" name="satisfaction" value="very_satisfied" class="mr-1"> Very Satisfied</label>
+          <label><input type="radio" name="satisfaction" value="satisfied" class="mr-1"> Satisfied</label>
+          <label><input type="radio" name="satisfaction" value="neutral" class="mr-1"> Neutral</label>
+          <label><input type="radio" name="satisfaction" value="dissatisfied" class="mr-1"> Dissatisfied</label>
+          <label><input type="radio" name="satisfaction" value="very_dissatisfied" class="mr-1"> Very Dissatisfied</label>
+        </div>
+      </div>
+
+      <!-- Ease of Use -->
+      <div>
+        <label class="block font-semibold mb-1">How easy is it to navigate and use CampusHut?</label>
+        <input type="range" name="ease_of_use" min="1" max="10" class="w-full">
+      </div>
+
+      <!-- Features Satisfaction -->
+      <div>
+        <label class="block font-semibold mb-1">How satisfied are you with the available features on CampusHut?</label>
+        <input type="range" name="features_satisfaction" min="1" max="10" class="w-full">
+      </div>
+
+      <!-- Improvement Suggestions -->
+      <div>
+        <label class="block font-semibold mb-1" for="improvement">What can we improve?</label>
+        <textarea id="improvement" name="improvement" placeholder="Please share any suggestions for improvement." class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" rows="3"></textarea>
+      </div>
+
+      <!-- Additional Comments -->
+      <div>
+        <label class="block font-semibold mb-1" for="comments">Additional Comments</label>
+        <textarea id="comments" name="comments" placeholder="Is there anything else you would like us to know?" class="w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:border-blue-500" rows="3"></textarea>
+      </div>
+
+      <!-- Would You Recommend -->
+      <div>
+        <label class="block font-semibold mb-1">Would you recommend CampusHut to others on campus?</label>
+        <div class="flex space-x-4">
+          <label><input type="radio" name="recommend" value="yes" class="mr-1"> Yes</label>
+          <label><input type="radio" name="recommend" value="no" class="mr-1"> No</label>
+        </div>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="text-center">
+        <button type="submit" class="bg-blue-500 text-white font-semibold py-2 px-6 rounded-lg hover:bg-blue-600 focus:outline-none">Submit Feedback</button>
+      </div>
+
+    </form>
+  </div>
+
+</body>
+</html>
